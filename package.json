@@ -1,10 +1,29 @@
 {
-  "name": "UserService",
+  "name": "userservice",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "User Service for Zeo",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "@sendgrid/mail": "^8.1.5",
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.14.2",
+    "validator": "^13.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eng-Bode2004/Zeo-UserService.git"
+  },
+  "author": "Abdelrahman Ashraf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eng-Bode2004/Zeo-UserService/issues"
+  },
+  "homepage": "https://github.com/Eng-Bode2004/Zeo-UserService#readme"
 }

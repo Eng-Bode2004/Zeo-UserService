@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5023100-94b5-45c0-8806-80e7b94bf2d5" name="Changes" comment="commit init" />
+    <list default="true" id="d5023100-94b5-45c0-8806-80e7b94bf2d5" name="Changes" comment="commit init">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Models/Users.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Services/UserServices.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config/Cloudinary.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,7 +35,7 @@
 }]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
-    "url": "https://github.com/Eng-Bode2004/Zeo.git",
+    "url": "https://github.com/Eng-Bode2004/Zeo-UserService.git",
     "accountId": "77ea1e18-db54-4a4f-9942-656a951f6f8a"
   }
 }]]></component>
@@ -36,10 +53,11 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "UserService",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/zezom/Downloads/Music/Zeo/userService",
+    "javascript.nodejs.core.library.configured.version": "22.14.0",
+    "javascript.nodejs.core.library.typings.version": "22.14.1",
+    "last_opened_file_path": "C:/Users/zezom/Downloads/Music/Zeo/userService/Services",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,6 +70,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zezom\Downloads\Music\Zeo\userService\Services" />
+      <recent name="C:\Users\zezom\Downloads\Music\Zeo\userService\Models" />
       <recent name="C:\Users\zezom\Downloads\Music\Zeo\userService" />
     </key>
   </component>
@@ -70,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746989699809</updated>
-      <workItem from="1746989700819" duration="378000" />
+      <workItem from="1746989700819" duration="1077000" />
     </task>
     <task id="LOCAL-00001" summary="commit init">
       <option name="closed" value="true" />
@@ -96,7 +116,31 @@
       <option name="project" value="LOCAL" />
       <updated>1746989951874</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit init">
+      <option name="closed" value="true" />
+      <created>1746990113401</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1746990113401</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit init">
+      <option name="closed" value="true" />
+      <created>1746990337747</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1746990337747</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit init">
+      <option name="closed" value="true" />
+      <created>1746990363591</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1746990363591</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
