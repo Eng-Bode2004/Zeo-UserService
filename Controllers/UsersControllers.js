@@ -1,4 +1,4 @@
-const UserService = require('../services/UserServices');
+const UserService = require('../Services/UserServices');
 
 class UsersController {
     async registerUser(req, res) {
