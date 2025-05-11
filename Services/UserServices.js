@@ -60,9 +60,9 @@ class UserServices {
     }
 
 
-    async uploadUserProfile(UserId, Image_URL) {
+    async uploadUserProfile(userId, Image_URL) {
         try {
-            if (!UserId){
+            if (!userId){
                 return Promise.reject(new Error("User Id is missing"));
             }
 
@@ -71,12 +71,12 @@ class UserServices {
             }
 
             // Corrected line here
-            const existUser = await User.findById(UserId);
+            const existUser = await User.findById(userId);
             if (!existUser) {
                 return Promise.reject(new Error("User not Found"));
             }
 
-            return User.findByIdAndUpdate(UserId, { $set: { profileImage: Image_URL } }, { new: true });
+            return User.findByIdAndUpdate(userId, { $set: { profileImage: Image_URL } }, { new: true });
         }catch (error) {
             return Promise.reject(error);
         }
