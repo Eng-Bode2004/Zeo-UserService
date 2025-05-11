@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5023100-94b5-45c0-8806-80e7b94bf2d5" name="Changes" comment="commit init">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/Users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/UserServices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/Cloudinary.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="d5023100-94b5-45c0-8806-80e7b94bf2d5" name="Changes" comment="commit init" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,6 +19,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory"><![CDATA[{
   "lastFilter": {
@@ -57,7 +51,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "javascript.nodejs.core.library.configured.version": "22.14.0",
     "javascript.nodejs.core.library.typings.version": "22.14.1",
-    "last_opened_file_path": "C:/Users/zezom/Downloads/Music/Zeo/userService/Services",
+    "last_opened_file_path": "C:/Users/zezom/Downloads/Music/Zeo/userService/Routes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,6 +64,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zezom\Downloads\Music\Zeo\userService\Routes" />
+      <recent name="C:\Users\zezom\Downloads\Music\Zeo\userService\Controllers" />
       <recent name="C:\Users\zezom\Downloads\Music\Zeo\userService\Services" />
       <recent name="C:\Users\zezom\Downloads\Music\Zeo\userService\Models" />
       <recent name="C:\Users\zezom\Downloads\Music\Zeo\userService" />
@@ -90,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1746989699809</updated>
-      <workItem from="1746989700819" duration="1077000" />
+      <workItem from="1746989700819" duration="1759000" />
     </task>
     <task id="LOCAL-00001" summary="commit init">
       <option name="closed" value="true" />
@@ -140,7 +136,31 @@
       <option name="project" value="LOCAL" />
       <updated>1746990363591</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="commit init">
+      <option name="closed" value="true" />
+      <created>1746991073881</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746991073881</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit init">
+      <option name="closed" value="true" />
+      <created>1746991363039</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746991363039</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit init">
+      <option name="closed" value="true" />
+      <created>1746991452298</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1746991452299</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
