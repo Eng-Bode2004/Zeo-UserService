@@ -27,20 +27,20 @@ class UsersController {
         try {
 
             const {userId} = req.params;
-            const {Image_URL} = req.body;
+            const {ImageURL} = req.body;
             if (!userId){
                 res.status(400).json({
                     message:"User Id is missing",
                 })
             }
 
-            if (!Image_URL){
+            if (!ImageURL){
                 res.status(400).json({
                     message:"Image URL is missing",
                 })
             }
 
-            const UserProfile = await UserService.uploadUserProfile(userId, Image_URL);
+            const UserProfile = await UserService.uploadUserProfile(userId, ImageURL);
             res.status(200).json({
                 message: 'User Profile was uploaded successfully.',
                 user: UserProfile,
