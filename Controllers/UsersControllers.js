@@ -23,6 +23,39 @@ class UsersController {
 
     }
 
+    async uploadUserProfile(req,res){
+        try {
+
+            const {UserId, Image_URL} = req.body;
+            if (!UserId){
+                res.status(400).json({
+                    message:"User Id is missing",
+                })
+            }
+
+            if (!Image_URL){
+                res.status(400).json({
+                    message:"Image URL is missing",
+                })
+            }
+
+            const UserProfile = await UserService.uploadUserProfile(UserId, Image_URL);
+            res.status(200).json({
+                message: 'User Profile was uploaded successfully.',
+                user: UserProfile,
+            })
+
+
+
+        }
+
+        catch (error) {
+            res.status(400).json({
+                message:"Failed to upload User",
+                error: error.message,
+            })
+        }
+    }
 }
 
 module.exports =new UsersController;
