@@ -1,5 +1,5 @@
 // Connect To DataBase
-const MongoDB = require('./config/DataBase');
+const MongoDB = require('./Config/DataBase');
 const mongoose = require("mongoose"); // Data Base Configrations
 const express = require('express');
 
