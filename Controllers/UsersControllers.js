@@ -84,6 +84,32 @@ class UsersController {
     }
 
 
+    async loginUser(req, res) {
+        try {
+            const { email, password } = req.body;
+            if (!email || !password) {
+                return res.status(400).json({
+                    status: 'failure',
+                    message: 'Email and Password are required'
+                })
+            }
+            const userData = {email, password};
+            const existUser = await UserService.loginUser(userData);
+            res.status(200).json({
+                status: 'success',
+                message: 'User login successfully.',
+                user: existUser
+            })
+
+        }
+
+        catch (error){
+            res.status(400).json({
+                error: error.message,
+            })
+        }
+    }
+
 }
 
 module.exports =new UsersController;

@@ -110,6 +110,61 @@ class UserServices {
     }
 
 
+    async loginUser(userData) {
+
+        try {
+
+            const { email, password } = userData;
+            if (!email || !password) {
+                return Promise.reject(new Error("Please enter All Fields Required"));
+            }
+
+            // Check if user exists
+            const existUser = await User.findOne({email: email});
+            if (!existUser) {
+                return Promise.reject(new Error("Invalid email"));
+            }
+
+
+            // Validate Password
+            const ValidPass = await bcrypt.compare(password, existUser.password);
+            if (!ValidPass || !existUser) {
+                return Promise.reject(new Error("Invalid email or Password"));
+            }
+
+            // Generate Token : Header . Payload . Signature
+            // Payload: main Data You store in The Token
+
+            const token = jwt.sign(
+                {
+                    userId:existUser._id,
+                    roleName:existUser.Rules.name,
+                    ruleId:existUser.Rules._id,
+                },
+                process.env.JWT_SECRET,
+
+                {expiresIn: "1h"}
+            );
+
+            return {
+                token: token,
+                user:{
+                    userId:existUser._id,
+                    username:existUser.username,
+                    email:existUser.email,
+                    role:existUser.Rules.name,
+                }
+            };
+
+
+        }
+
+        catch (error) {
+            throw error;
+        }
+
+    }
+
 }
 
 module.exports =new UserServices;
