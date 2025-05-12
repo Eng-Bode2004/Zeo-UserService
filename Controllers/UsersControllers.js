@@ -57,6 +57,33 @@ class UsersController {
             })
         }
     }
+
+    async assignUser(req, res) {
+        try {
+            const { userId } = req.params;  // Changed to 'id' to match route parameter
+            const { ruleId } = req.body;
+            if (!ruleId) {
+                return res.status(400).json({
+                    error: 'Rule ID is required in request body'
+                });
+            }
+
+            const updatedUser = await UserService.assignRule(userId, ruleId);
+
+            res.status(200).json({
+                status: 'success',
+                message: 'Rule assigned successfully.',
+                user: updatedUser
+            });
+        } catch (error) {
+            res.status(400).json({
+                status: 'failure',
+                error: error.message
+            });
+        }
+    }
+
+
 }
 
 module.exports =new UsersController;

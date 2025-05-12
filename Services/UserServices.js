@@ -82,6 +82,32 @@ class UserServices {
         }
     }
 
+    async assignRule(userId, ruleId) {
+        try {
+            if (!userId || !ruleId) {
+                return Promise.reject(new Error("Please enter All Fields Required"));
+            }
+
+            if (!mongoose.Types.ObjectId.isValid(userId)) {
+                return Promise.reject(new Error("Invalid UserID"));
+            }
+
+            if (!mongoose.Types.ObjectId.isValid(ruleId)) {
+                return Promise.reject(new Error("Invalid Rule ID"));
+            }
+
+            const newUser = await User.findByIdAndUpdate(userId, {$set:{Rule: ruleId}},{new: true,runValidators: true}).populate("Rule");
+
+            if (!newUser) {
+                return Promise.reject(new Error("Invalid UserID"));
+            }
+            return newUser;
+        }
+
+        catch (error) {
+            throw error;
+        }
+    }
 
 
 }
