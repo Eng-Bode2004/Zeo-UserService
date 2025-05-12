@@ -138,7 +138,7 @@ class UserServices {
             const token = jwt.sign(
                 {
                     userId:existUser._id,
-                    roleName:existUser.Rules.name,
+                    roleName:existUser.Rules,
                     ruleId:existUser.Rules._id,
                 },
                 process.env.JWT_SECRET,
