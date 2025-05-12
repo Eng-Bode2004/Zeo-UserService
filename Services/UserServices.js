@@ -96,7 +96,7 @@ class UserServices {
                 return Promise.reject(new Error("Invalid Rule ID"));
             }
 
-            const newUser = await User.findByIdAndUpdate(userId, {$set:{Rule: ruleId}},{new: true,runValidators: true}).populate("Rule");
+            const newUser = await User.findByIdAndUpdate(userId, {$set:{Rule: ruleId}},{new: true});
 
             if (!newUser) {
                 return Promise.reject(new Error("Invalid UserID"));
