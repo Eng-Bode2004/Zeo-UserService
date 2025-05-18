@@ -149,6 +149,10 @@ class UserServices {
                 token: token,
                 user:{
                     userId:existUser._id,
+                    firstName:existUser.firstName,
+                    lastName:existUser.lastName,
+                    Address:existUser.Address,
+                    profileImage:existUser.profileImage,
                     username:existUser.username,
                     email:existUser.email,
                     ruleID:existUser.Rule
