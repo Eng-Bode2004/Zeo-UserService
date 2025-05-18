@@ -7,7 +7,7 @@ router.post("/register", UserControllers.registerUser);
 router.put("/profile/:userId", UserControllers.uploadUserProfile);
 router.put("/:userId/rule", UserControllers.assignUser);
 router.post('/login', UserControllers.loginUser);
-
+router.put('/:userId/address', UserControllers.uploadAddress);
 
 
 module.exports = router;

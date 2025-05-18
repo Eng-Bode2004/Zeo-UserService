@@ -110,6 +110,34 @@ class UsersController {
         }
     }
 
+    async uploadAddress(req, res) {
+        try {
+            const { userId } = req.params;
+            const { addressId } = req.body;
+
+            if (!addressId) {
+                return res.status(400).json({
+                    status: 'failure',
+                    message: 'addressId is required in body'
+                });
+            }
+
+            const updatedUser = await UserService.uploadAddress(userId, addressId);
+
+            res.status(200).json({
+                status: 'success',
+                message: 'Address added to user successfully.',
+                user: updatedUser
+            });
+        } catch (error) {
+            res.status(400).json({
+                status: 'failure',
+                message: 'Failed to update user address.',
+                error: error.message
+            });
+        }
+    }
+
 }
 
 module.exports =new UsersController;

@@ -164,6 +164,23 @@ class UserServices {
 
     }
 
+    async uploadAddress(userId, addressId) {
+        try {
+            if (!userId) {
+                return Promise.reject(new Error("Please enter userId Required"));
+            }
+            if (!addressId) {
+                return Promise.reject(new Error("Please enter addressId required"));
+            }
+            return User.findByIdAndUpdate(userId,{$set:{Address:addressId}},{new:true});
+
+
+        }
+        catch (error) {
+            throw error;
+        }
+    }
+
 }
 
 module.exports =new UserServices;
